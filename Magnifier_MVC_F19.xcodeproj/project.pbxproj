@@ -12,6 +12,8 @@
 		542B5FC32322B7D4001FB119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B5FC12322B7D4001FB119 /* Main.storyboard */; };
 		542B5FC52322B7D5001FB119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542B5FC42322B7D5001FB119 /* Assets.xcassets */; };
 		542B5FC82322B7D5001FB119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B5FC62322B7D5001FB119 /* LaunchScreen.storyboard */; };
+		F698506C232598F9002DF07F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F698506B232598F9002DF07F /* WebKit.framework */; };
+		F69850742325AD36002DF07F /* EPICS Magnifier Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F69850722325A3E1002DF07F /* EPICS Magnifier Manual.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		542B5FC42322B7D5001FB119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542B5FC72322B7D5001FB119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542B5FC92322B7D5001FB119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F698506B232598F9002DF07F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F69850722325A3E1002DF07F /* EPICS Magnifier Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "EPICS Magnifier Manual.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F698506C232598F9002DF07F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				542B5FBC2322B7D4001FB119 /* Magnifier_MVC_F19 */,
 				542B5FBB2322B7D4001FB119 /* Products */,
+				F698506A232598F9002DF07F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +64,7 @@
 				F69850682324D437002DF07F /* Controller */,
 				F69850672324D434002DF07F /* Model */,
 				542B5FC42322B7D5001FB119 /* Assets.xcassets */,
+				542B5FBD2322B7D4001FB119 /* AppDelegate.swift */,
 				542B5FC62322B7D5001FB119 /* LaunchScreen.storyboard */,
 				542B5FC92322B7D5001FB119 /* Info.plist */,
 			);
@@ -67,8 +74,6 @@
 		F69850672324D434002DF07F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				542B5FBD2322B7D4001FB119 /* AppDelegate.swift */,
-				542B5FBF2322B7D4001FB119 /* ViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,6 +81,8 @@
 		F69850682324D437002DF07F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				542B5FBF2322B7D4001FB119 /* ViewController.swift */,
+				F69850722325A3E1002DF07F /* EPICS Magnifier Manual.pdf */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,6 +93,14 @@
 				542B5FC12322B7D4001FB119 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F698506A232598F9002DF07F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F698506B232598F9002DF07F /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69850742325AD36002DF07F /* EPICS Magnifier Manual.pdf in Resources */,
 				542B5FC82322B7D5001FB119 /* LaunchScreen.storyboard in Resources */,
 				542B5FC52322B7D5001FB119 /* Assets.xcassets in Resources */,
 				542B5FC32322B7D4001FB119 /* Main.storyboard in Resources */,
