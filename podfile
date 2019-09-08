@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.4'
+use_frameworks!
+
+target 'Magnifier_MVC_F19' do
+    pod 'QRCodeReader.swift', '~> 10.1.0'
+end

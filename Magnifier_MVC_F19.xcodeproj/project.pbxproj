@@ -12,9 +12,11 @@
 		542B5FC52322B7D5001FB119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542B5FC42322B7D5001FB119 /* Assets.xcassets */; };
 		542B5FC82322B7D5001FB119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B5FC62322B7D5001FB119 /* LaunchScreen.storyboard */; };
 		54707B582325C0F20023DCEA /* qrTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54707B572325C0F20023DCEA /* qrTestController.swift */; };
+		C18A80EB18AE5359747D6F3E /* Pods_Magnifier_MVC_F19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ABC69435A3476223FFE6F1 /* Pods_Magnifier_MVC_F19.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49ABC69435A3476223FFE6F1 /* Pods_Magnifier_MVC_F19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Magnifier_MVC_F19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542B5FBA2322B7D4001FB119 /* Magnifier_MVC_F19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnifier_MVC_F19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542B5FBD2322B7D4001FB119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542B5FC22322B7D4001FB119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		542B5FC72322B7D5001FB119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542B5FC92322B7D5001FB119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54707B572325C0F20023DCEA /* qrTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = qrTestController.swift; path = Magnifier_MVC_F19/Controller/qrTestController.swift; sourceTree = SOURCE_ROOT; };
+		5FED5B4F1A7B8837C4B968EE /* Pods-Magnifier_MVC_F19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magnifier_MVC_F19.release.xcconfig"; path = "Target Support Files/Pods-Magnifier_MVC_F19/Pods-Magnifier_MVC_F19.release.xcconfig"; sourceTree = "<group>"; };
+		8DDEF7821C8D611BD14CFE6F /* Pods-Magnifier_MVC_F19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magnifier_MVC_F19.debug.xcconfig"; path = "Target Support Files/Pods-Magnifier_MVC_F19/Pods-Magnifier_MVC_F19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18A80EB18AE5359747D6F3E /* Pods_Magnifier_MVC_F19.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D9EDAEB180314728632F83D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49ABC69435A3476223FFE6F1 /* Pods_Magnifier_MVC_F19.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		542B5FB12322B7D4001FB119 = {
 			isa = PBXGroup;
 			children = (
 				542B5FBC2322B7D4001FB119 /* Magnifier_MVC_F19 */,
 				542B5FBB2322B7D4001FB119 /* Products */,
+				70F1E327A2D51154C593A971 /* Pods */,
+				4D9EDAEB180314728632F83D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +103,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		70F1E327A2D51154C593A971 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DDEF7821C8D611BD14CFE6F /* Pods-Magnifier_MVC_F19.debug.xcconfig */,
+				5FED5B4F1A7B8837C4B968EE /* Pods-Magnifier_MVC_F19.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542B5FCC2322B7D5001FB119 /* Build configuration list for PBXNativeTarget "Magnifier_MVC_F19" */;
 			buildPhases = (
+				5EE3CE860F29F855C8B07CD8 /* [CP] Check Pods Manifest.lock */,
 				542B5FB62322B7D4001FB119 /* Sources */,
 				542B5FB72322B7D4001FB119 /* Frameworks */,
 				542B5FB82322B7D4001FB119 /* Resources */,
+				E1E1D13CE2E5AA2F4C9B783C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EE3CE860F29F855C8B07CD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Magnifier_MVC_F19-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E1D13CE2E5AA2F4C9B783C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Magnifier_MVC_F19/Pods-Magnifier_MVC_F19-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Magnifier_MVC_F19/Pods-Magnifier_MVC_F19-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Magnifier_MVC_F19/Pods-Magnifier_MVC_F19-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		542B5FB62322B7D4001FB119 /* Sources */ = {
@@ -304,6 +373,7 @@
 		};
 		542B5FCD2322B7D5001FB119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DDEF7821C8D611BD14CFE6F /* Pods-Magnifier_MVC_F19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +392,7 @@
 		};
 		542B5FCE2322B7D5001FB119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FED5B4F1A7B8837C4B968EE /* Pods-Magnifier_MVC_F19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
