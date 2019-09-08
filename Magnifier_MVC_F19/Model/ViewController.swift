@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var CameraButton: UIButton!
+    @IBOutlet weak var QRCodeButton: UIButton!
+    @IBOutlet weak var MenuButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
