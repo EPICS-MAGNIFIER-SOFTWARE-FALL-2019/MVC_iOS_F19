@@ -56,9 +56,7 @@
 				5441261B23259F02008BA428 /* View */,
 				5441261C23259F0C008BA428 /* Controller */,
 				542B5FBD2322B7D4001FB119 /* AppDelegate.swift */,
-				542B5FC12322B7D4001FB119 /* Main.storyboard */,
 				542B5FC42322B7D5001FB119 /* Assets.xcassets */,
-				542B5FC62322B7D5001FB119 /* LaunchScreen.storyboard */,
 				542B5FC92322B7D5001FB119 /* Info.plist */,
 			);
 			path = Magnifier_MVC_F19;
@@ -74,6 +72,8 @@
 		5441261B23259F02008BA428 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				542B5FC12322B7D4001FB119 /* Main.storyboard */,
+				542B5FC62322B7D5001FB119 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
